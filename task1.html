@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+   <title></title>
+
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+  <body>
+  <!-- begin Site Wrapper -->
+  <div id="wrap">
+
+  <!-- begin site header -->
+  <header id="site-header">
+
+	<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+	<!-- begin navigation bar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- begin navbar branding and toggle -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html"><img class="img-responsive img-rounded branding" src="images/bg-main.png" alt="To-do Site Logo" /></a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+				MENU
+				</button>
+			</div>
+			<!-- end branding and toggle -->
+			<!-- begin desktop main menu -->
+			<div class="collapse navbar-collapse" id="main_nav">
+				<ul class="nav navbar-nav">
+					<li class="active border-right"><a href="#">All Tasks <span class="sr-only">(current)</span> &nbsp; <span class="badge">3<span class="sr-only">new items</span></span></a></li>
+									<li><a href="#">Urgent</a></li>
+					<li class="border-right"><a href="#">Overdue &nbsp; <span class="badge alert-danger">1</span></a></li>
+					<li><a href="#">Goals</a></li>
+				</ul>
+			</div>
+			<!-- end desktop main menu -->
+		</div>
+	</nav> <!-- end navigation bar -->
+  </header>  <!-- end site header -->
+  <!-- begin site main content -->
+  <main class="container-fluid">
+  <!-- begin row div -->
+	<div class="row">
+		<header id="content-header" class="col-md-12">
+			<h1>Make an Appointment with new Vet.</h1>
+		</header>
+	</div>
+	<div class="row">
+		<nav id="Task-editor-controls">
+			<div class="container-fluid">
+				<!-- begin editor navbar toggle -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#task-edit-nav" aria-expanded="false">
+					Edit <span class="glyphicon glyphicon-edit"></span>
+					</button>
+				</div>
+				<!-- end branding and toggle -->
+				<!-- begin desktop main menu -->
+				<div class="collapse navbar-collapse" id="task-edit-nav">
+					<div class="btn-group" role="group" aria-label="Task Editing Controls">
+						<button type="button" class="btn btn-default">Edit</button>
+						<button type="button" class="btn btn-default">Add Comments</button>
+						<button type="button" class="btn btn-default">Assign</button>
+					</div>
+				</div>
+			<!-- end desktop main menu -->
+			</div>
+		</nav>
+	</div>
+	&nbsp;
+	<div class="row">
+		<!-- begin side bar navigation -->
+		<section id="assignee" class="col-md-2">
+			<h2>Assignee</h2>
+			<img class="img-responsive img-rounded branding" src="images/bg-main.png" alt="To-do Site Logo" />
+			<p>Name of Person</p>
+		</section><!-- end side bar navigation -->
+		
+		<!-- begin task list main section-->
+		<section id="taskdetails" class="col-md-7"> 
+			<div class="row">
+			
+			</div>
+		
+		  
+		</section><!-- end task list main section -->
+		<!--begin task details side panel-->
+		<section class="col-md-3"> 
+			&nbsp;
+		</section><!-- end task details side panel -->
+  </div> <!-- end row div -->
+  </main>  <!-- end site content -->
+
+  <!-- begin site footer -->
+  <footer class="navbar-default navbar-fixed-bottom">
+	<div class="container-fluid">
+	<p class="text-muted pull-right">&copy; HBryant 2016</p>
+	</div>
+  </footer>  <!-- begin site footer -->
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</div><!-- end Site Wrapper -->
+  </body>
+</html>

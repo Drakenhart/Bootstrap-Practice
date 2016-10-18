@@ -3,6 +3,12 @@
 .branding {
 	max-height: 100%;
 }
+.user-img {
+	max-height: 75px;
+}
+.user-img-sm {
+	max-height: 25px;
+}
 .border-right {
 	border-right: 2px dotted #ddd;
 }

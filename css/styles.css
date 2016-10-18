@@ -1,0 +1,38 @@
+
+
+.branding {
+	max-height: 100%;
+}
+.border-right {
+	border-right: 2px dotted #ddd;
+}
+.info-row {
+	height: 66px;
+}
+#task-list h2, #assignee h2 {
+	font-size: 1em;
+	color: black;
+	padding:10px;
+}
+#task-list ol li{
+	
+	font-size: 1.2em;
+	
+	margin-bottom:2px;
+}
+#task-list ol li a {
+	display:block;
+	height: 100%;
+	width: 100%;
+	padding: 10px;
+	border:1px solid gray;
+}
+#task-list ol li a:hover {
+	background-color:#ddd;
+}
+.success {
+	color: #3fad46;;
+}
+.done {
+	color: ;
+}

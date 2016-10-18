@@ -4,6 +4,7 @@
    <title></title>
 
     <link href="css/bootstrap.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -14,39 +15,85 @@
 
   </head>
   <body>
-    
-    <!-- start main navigation -->
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- start collasped navbar -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">BRAND</a>
-          <button type="button" class="navbar-toggle collasped" data-toggle="collaspe" data-target="#main_navbar" aria-expanded="false"> Click for More... </button>
-          <!-- end collasped navbar -->
-        </div> <!-- end navbar header div -->
-                  <!-- start un-collasped navbar -->
-          <div class="collaspe navbar-collaspe" id="main_navbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="portfolios.html">Portfolios</a></li>
-              <li><a href="about.html">About</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </div><!-- end un-collasped nav bar -->
-      </div> <!-- end nav container -->
-    </nav>
-    <!-- end main navigation -->
-    <!-- start main content -->
-    
-    <section class="container">
-    <h1>Coursera Site</h1>
-    
-    <h2>Graceful Degradation</h2>
-    <p>Website ability to work in older browsers.</p>
-    </section>
-    
+  <!-- begin Site Wrapper -->
+  <div id="wrap">
+
+  <!-- begin site header -->
+  <header id="site-header">
+
+	<a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
+	<!-- begin navigation bar -->
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+			<!-- begin navbar branding and toggle -->
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html"><img class="img-responsive img-rounded branding" src="images/bg-main.png" alt="To-do Site Logo" /></a>
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main_nav" aria-expanded="false">
+				MENU
+				</button>
+			</div>
+			<!-- end branding and toggle -->
+			<!-- begin desktop main menu -->
+			<div class="collapse navbar-collapse" id="main_nav">
+				<ul class="nav navbar-nav">
+					<li class="active border-right"><a href="#">All Tasks <span class="sr-only">(current)</span> &nbsp; <span class="badge">3<span class="sr-only">new items</span></span></a></li>
+									<li><a href="#">Urgent</a></li>
+					<li class="border-right"><a href="#">Overdue &nbsp; <span class="badge alert-danger">1</span></a></li>
+					<li><a href="#">Goals</a></li>
+				</ul>
+			</div>
+			<!-- end desktop main menu -->
+		</div>
+	</nav> <!-- end navigation bar -->
+  </header>  <!-- end site header -->
+  <!-- begin site main content -->
+  <main class="container-fluid">
+  <!-- begin row div -->
+	<div class="row">
+		<header id="content-header" class="col-md-12">
+			<h1>All Tasks</h1>
+		</header>
+	</div>
+	<div class="row">
+		<!-- begin side bar navigation -->
+		<nav class="col-md-2">
+			&nbsp;
+		</nav><!-- end side bar navigation -->
+		
+		<!-- begin task list main section-->
+		<section id="task-list" class="col-md-7"> 
+			<h2 class="alert alert-danger">Past Due</h2>
+			<ol>
+				<li><a href="task1.html">Get a petpedi.</a></li>
+			</ol>
+			<h2 class="alert alert-warning">Due Today</h2>
+			<ol>
+			<li>
+			<a class="done" href="task1.html">Find new vet. <span class="glyphicon glyphicon-check success" aria-label="Completed."></span></a></li>
+				<li><a href="task1.html">Make an Appointment with new Vet.</a></li>
+			</ol>
+			<h2 class="alert alert-success">Due this Week</h2>
+			<ol>
+				<li><a href="task1.html">Get pet nails trimmed.</a></li>
+			</ol>
+		  
+		</section><!-- end task list main section -->
+		<!--begin task details side panel-->
+		<section class="col-md-3"> 
+			&nbsp;
+		</section><!-- end task details side panel -->
+  </div> <!-- end row div -->
+  </main>  <!-- end site content -->
+
+  <!-- begin site footer -->
+  <footer class="navbar-default navbar-fixed-bottom">
+	<div class="container-fluid">
+	<p class="text-muted pull-right">&copy; HBryant 2016</p>
+	</div>
+  </footer>  <!-- begin site footer -->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-
+</div><!-- end Site Wrapper -->
   </body>
 </html>
